@@ -27,6 +27,8 @@ https://github.com/crifan/iOSYouTubeAdsFilter
       * ![mac_iphone_youtube](assets/mac_iphone_youtube.jpg)
         * ![xcode_debugging_youtube](assets/xcode_debugging_youtube.jpg)
 
+## 说明
+
 ## 代码说明
 
 * `youtubeDylib/Logos`：所有hook代码逻辑都在这里
@@ -58,7 +60,16 @@ https://github.com/crifan/iOSYouTubeAdsFilter
   * `c`：C语言的
   * `iOS`：iOS语言的
 
-## 其他
+## 其他说明
+
+* `result`：之前调试和研究追踪YouTube广告过滤期间的输出成果
+  * `youtubeCallSequence.coffee`：相关函数调用逻辑
+    * 包括最早的，从播放时间为0的角度追踪的相关函数逻辑
+    * 和后续的，加了header导致死循环重复触发请求等相关逻辑
+  * `functions`：涉及到的个别的部分的函数的IDA伪代码
+  * `disable_ads_filter/disable_ads_filter_logic.coffee`：和广告过滤=禁止广告相关的函数调用逻辑
+
+## 其他相关
 
 其他相关说明解释，详见：
 
